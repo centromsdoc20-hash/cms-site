@@ -9,19 +9,21 @@ import {
   FaStethoscope
 } from 'react-icons/fa';
 import styles from './styles.module.scss';
+import fachada from '../../assets/estrutura/fachada.jpg';
+import fachada2 from '../../assets/estrutura/fachada2.webp';
 import img1 from '../../assets/estrutura/rec1.jpeg';
 import img1_2 from '../../assets/estrutura/rec1-2.jpeg';
 import img1_3 from '../../assets/estrutura/rec1_3.jpeg';
 import img1_4 from '../../assets/estrutura/rec1_4.jpeg';
-import img2 from '../../assets/estrutura/gal-2.webp';
-import img3 from '../../assets/estrutura/gal-3.webp';
-import img4 from '../../assets/estrutura/gal-4.webp';
-import img5 from '../../assets/estrutura/gal-5.webp';
-import img6 from '../../assets/estrutura/gal-6.webp';
-import img7 from '../../assets/estrutura/gal-7.webp';
-import img8 from '../../assets/estrutura/gal-8.webp';
-import img9 from '../../assets/estrutura/gal-9.webp';
-import img10 from '../../assets/estrutura/gal-10.webp';
+import rec3 from '../../assets/estrutura/rec3.jpg';
+import esperaRec3 from '../../assets/estrutura/espera_rec3.jpg';
+import consultorioEco from '../../assets/estrutura/consultorioEco.jpg';
+import consultorioEco2 from '../../assets/estrutura/consultorioEco2.jpg';
+import consultorioPsicologa from '../../assets/estrutura/consultorioPsicologa.jpg';
+import consultorioGineco from '../../assets/estrutura/consultorioGineco.jpg';
+import consultorioOftalmo from '../../assets/estrutura/consultorioOftalmo.jpg';
+import consultorioPediatria from '../../assets/estrutura/pediatria.jpg';
+
 
 interface GalleryImage {
   src: string;
@@ -48,6 +50,18 @@ export default function OurStructure() {
   const [isAutoPlaying, setIsAutoPlaying] = useState(false);
   
   const galleryImages: GalleryImage[] = [
+    {
+      src: fachada,
+      title: "Fachada do Centro Médico Sapiranga", 
+      description: "Fachada moderna e acolhedora do Centro Médico Sapiranga, projetada para oferecer uma experiência de cuidado em saúde desde a chegada",
+      area: "entrada"
+    },
+    {
+      src: fachada2,
+      title: "Visão lateral do Centro Médico Sapiranga",
+      description: "Visão lateral da entrada do Centro Médico Sapiranga",
+      area: "entrada"
+    },
     { 
       src: img1, 
       title: "Recepção", 
@@ -72,60 +86,55 @@ export default function OurStructure() {
       description: "Recepção elegante e funcional, com equipe treinada para atendimento de excelência",
       area: "Recepção"
     },
-    { 
-      src: img2, 
-      title: "Entrada do Centro Médico Sapiranga", 
-      description: "Acesso principal com fachada moderna e sinalização clara para fácil localização",
-      area: "Entrada"
-    },
-    { 
-      src: img3, 
-      title: "Centro Médico Sapiranga área externa", 
-      description: "Amplo espaço externo com paisagismo cuidadoso e acessibilidade total",
-      area: "Externo"
-    },
-    { 
-      src: img4, 
-      title: "Recepção segundo andar", 
-      description: "Área de recepção no piso superior, mantendo o mesmo padrão de qualidade e conforto",
-      area: "Recepção"
-    },
-    { 
-      src: img5, 
-      title: "Consultório Oftalmologia", 
-      description: "Espaço especializado equipado com tecnologia de ponta para exames oftalmológicos",
-      area: "Oftalmologia"
-    },
-    { 
-      src: img6, 
-      title: "Consultório Odontologia", 
-      description: "Ambiente odontológico completo com equipamentos modernos para diversos tratamentos",
-      area: "Odontologia"
-    },
-    { 
-      src: img7, 
-      title: "Consultório", 
-      description: "Espaço padrão para consultas médicas, projetado para privacidade e conforto do paciente",
-      area: "Consultório"
-    },
-    { 
-      src: img8, 
-      title: "Consultório Ecografia", 
-      description: "Sala especializada para exames de imagem com equipamentos de última geração",
-      area: "Diagnóstico"
-    },
-    { 
-      src: img9, 
-      title: "Acesso segundo andar", 
-      description: "Escada e corredores amplos que garantem acessibilidade e fácil circulação",
-      area: "Circulação"
-    },
-    { 
-      src: img10, 
-      title: "Estacionamento", 
-      description: "Ampla área de estacionamento com vagas demarcadas e fácil acesso à entrada principal",
-      area: "Estacionamento"
-    }
+
+   {
+    src: rec3,
+    title: "Recepção 2º andar",
+    description: "Recepção do segundo andar, com design contemporâneo e ambiente acolhedor",
+    area: "Recepção"
+   },
+   {
+   src: esperaRec3,
+    title: "Área de espera 2º andar",
+    description: "Área de espera do segundo andar, projetada para oferecer conforto e tranquilidade",
+    area: "Espera"
+},
+{
+  src: consultorioEco,
+  title: "Consultório de Ecografias",
+  description: "Consultório equipado com tecnologia avançada para exames de ecografia",
+  area: "Consultório"
+},
+{
+  src: consultorioEco2,
+  title: "Consultório de Ecografias",
+  description: "Consultório moderno e confortável, projetado para exames de ecografia com tecnologia de ponta",
+  area: "Consultório"
+},
+{
+  src: consultorioPsicologa,
+  title: "Consultório de Psicologia",
+  description: "Espaço dedicado à psicologia, com ambiente tranquilo e profissionais qualificados",
+  area: "Consultório"
+},
+{
+  src: consultorioGineco,
+  title: "Consultório de Ginecologia",    
+  description: "Consultório de ginecologia equipado com tecnologia avançada para atendimento especializado",
+  area: "Consultório"
+},
+{
+  src: consultorioOftalmo,
+  title: "Consultório de Oftalmologia",
+  description: "Consultório de oftalmologia moderno, com equipamentos de última geração para exames precisos",
+  area: "Consultório"
+},
+{
+  src: consultorioPediatria,
+  title: "Consultório de Pediatria",
+  description: "Consultório de pediatria projetado para oferecer um ambiente acolhedor e seguro para crianças",
+  area: "Consultório"
+}
   ];
 
   const features: Feature[] = [

@@ -372,6 +372,8 @@ $breakpoint-sm: 576px;
 
 .mainImage {
   width: 100%;
+  max-width: 980px;
+  max-height: 780px;
   height: auto;
   display: block;
   transition: transform $transition-slow;
@@ -466,6 +468,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, span {
-  color: $color-card-text;
   font-family: $font-primary;
 }

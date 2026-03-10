@@ -1,9 +1,9 @@
 @import "../../styles/theme.scss";
 
-// Breakpoints ajustados - foco em 1366px
+
 $breakpoint-xxl: 1920px;
 $breakpoint-xl: 1440px;
-$breakpoint-lg: 1366px; // Monitor específico que você quer ajustar
+$breakpoint-lg: 1366px; 
 $breakpoint-md: 1024px;
 $breakpoint-sm: 768px;
 $breakpoint-xs: 576px;
@@ -11,7 +11,7 @@ $breakpoint-xs: 576px;
 .banner {
   position: relative;
   width: 100%;
-  height: 550px; // Reduzido de 600px
+  height: 550px;
   overflow: hidden;
   
   @media (max-width: $breakpoint-xl) {
@@ -19,7 +19,7 @@ $breakpoint-xs: 576px;
   }
   
   @media (max-width: $breakpoint-lg) {
-    height: 460px; // Ajuste específico para 1366px
+    height: 460px;
   }
   
   @media (max-width: $breakpoint-md) {
@@ -48,6 +48,21 @@ $breakpoint-xs: 576px;
   align-items: center;
   justify-content: center;
   will-change: transform, opacity;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: -1;
+  }
 }
 
 .textContainer {
@@ -58,6 +73,8 @@ $breakpoint-xs: 576px;
   color: $color-title-text;
   display: flex;
   justify-content: center;
+  position: relative; 
+  z-index: 2;
   
   @media (max-width: $breakpoint-lg) {
     padding: 0 4%;
@@ -95,62 +112,62 @@ $breakpoint-xs: 576px;
   }
 
   h1 {
-    font-size: $font-size-banner-title; // 42px original
+    font-size: $font-size-banner-title;
     color: $color-white;
     margin-bottom: 1.25rem;
     line-height: 1.15;
     font-weight: 700;
     
     @media (max-width: $breakpoint-xl) {
-      font-size: 2.75rem; // 44px
+      font-size: 2.75rem;
     }
     
     @media (max-width: $breakpoint-lg) {
-      font-size: 2.5rem; // 40px para 1366px
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     
     @media (max-width: $breakpoint-md) {
-      font-size: 2rem; // 32px
+      font-size: 2rem;
     }
     
     @media (max-width: $breakpoint-sm) {
-      font-size: 1.75rem; // 28px
+      font-size: 1.75rem;
       margin-bottom: 0.75rem;
     }
     
     @media (max-width: $breakpoint-xs) {
-      font-size: 1.5rem; // 24px
+      font-size: 1.5rem;
     }
   }
 
   p {
-    font-size: $font-size-banner-subtitle; // 36px original
+    font-size: $font-size-banner-subtitle;
     color: $color-white;
     margin-bottom: 1.5rem;
     line-height: 1.3;
     
     @media (max-width: $breakpoint-xl) {
-      font-size: 2rem; // 32px
+      font-size: 2rem;
     }
     
     @media (max-width: $breakpoint-lg) {
-      font-size: 1.75rem; // 28px para 1366px
+      font-size: 1.75rem;
       margin-bottom: 1.25rem;
     }
     
     @media (max-width: $breakpoint-md) {
-      font-size: 1.5rem; // 24px
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
     
     @media (max-width: $breakpoint-sm) {
-      font-size: 1.25rem; // 20px
+      font-size: 1.25rem;
       margin-bottom: 0.75rem;
     }
     
     @media (max-width: $breakpoint-xs) {
-      font-size: 1.125rem; // 18px
+      font-size: 1.125rem;
     }
   }
 
@@ -200,7 +217,7 @@ $breakpoint-xs: 576px;
     border-radius: 999px;
     background-color: $color-bg-button;
     color: white;
-    font-size: $font-size-text-lg; // 16px original
+    font-size: $font-size-text-lg;
     box-shadow: 0 4px 12px rgba(207, 46, 46, 0.2);
     transition: all 0.3s ease;
     will-change: transform;
@@ -213,7 +230,7 @@ $breakpoint-xs: 576px;
     
     @media (max-width: $breakpoint-lg) {
       padding: 0.7rem 1.75rem;
-      font-size: $font-size-text-md; // 14px para 1366px
+      font-size: $font-size-text-md;
     }
     
     @media (max-width: $breakpoint-md) {
@@ -223,7 +240,7 @@ $breakpoint-xs: 576px;
     
     @media (max-width: $breakpoint-sm) {
       padding: 0.5rem 1.25rem;
-      font-size: $font-size-text-sm; // 12px
+      font-size: $font-size-text-sm;
     }
   }
 }
@@ -244,7 +261,7 @@ $breakpoint-xs: 576px;
   align-items: center;
   justify-content: center;
   color: $color-primary-dark;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
   width: 50px;
   height: 50px;
 

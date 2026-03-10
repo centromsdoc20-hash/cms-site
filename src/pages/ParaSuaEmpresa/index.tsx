@@ -1,5 +1,5 @@
 import BannerPages from "../../components/BannerPages";
-import banner from '../../assets/Group-7.webp'
+import banner from '../../assets/estrutura/suaEmpresa.jpg';
 import FilterItems from "../../components/FilterItems";
 import Texts from "../../components/UI/Texts";
 import BenefitsForCompanies from "./Components/BenefitsForCompanies";
