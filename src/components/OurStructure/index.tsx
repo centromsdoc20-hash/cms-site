@@ -47,12 +47,6 @@ export default function OurStructure() {
 
   const galleryImages: GalleryImage[] = [
     {
-      src: fachada,
-      title: "Fachada do Centro Médico Sapiranga",
-      description: "Fachada do Centro Médico Sapiranga",
-      area: "entrada"
-    },
-    {
       src: img1,
       title: "Recepção",
       description: "Ambiente sofisticado com atendimento personalizado e área de espera confortável",
@@ -69,6 +63,12 @@ export default function OurStructure() {
       title: "Área de recepção",
       description: "Recepção ampla e iluminada, projetada para oferecer uma experiência acolhedora",
       area: "Recepção"
+    },
+    {
+      src: fachada,
+      title: "Fachada do Centro Médico Sapiranga",
+      description: "Fachada do Centro Médico Sapiranga",
+      area: "entrada"
     },
     {
       src: consultorioEco,
