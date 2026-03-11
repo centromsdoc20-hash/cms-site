@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
-import { 
-  FaChevronLeft, 
+import {
+  FaChevronLeft,
   FaChevronRight,
   FaShieldAlt,
   FaUserMd,
@@ -10,13 +10,9 @@ import {
 } from 'react-icons/fa';
 import styles from './styles.module.scss';
 import fachada from '../../assets/estrutura/fachada.jpg';
-import fachada2 from '../../assets/estrutura/fachada2.webp';
-import img1 from '../../assets/estrutura/rec1.jpeg';
+import img1 from '../../assets/estrutura/rec1_1.jpeg';
 import img1_2 from '../../assets/estrutura/rec1-2.jpeg';
 import img1_3 from '../../assets/estrutura/rec1_3.jpeg';
-import img1_4 from '../../assets/estrutura/rec1_4.jpeg';
-import rec3 from '../../assets/estrutura/rec3.jpg';
-import esperaRec3 from '../../assets/estrutura/espera_rec3.jpg';
 import consultorioEco from '../../assets/estrutura/consultorioEco.jpg';
 import consultorioEco2 from '../../assets/estrutura/consultorioEco2.jpg';
 import consultorioPsicologa from '../../assets/estrutura/consultorioPsicologa.jpg';
@@ -48,23 +44,17 @@ export default function OurStructure() {
   const [isImageLoading, setIsImageLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(false);
-  
+
   const galleryImages: GalleryImage[] = [
     {
       src: fachada,
-      title: "Fachada do Centro Médico Sapiranga", 
-      description: "Fachada moderna e acolhedora do Centro Médico Sapiranga, projetada para oferecer uma experiência de cuidado em saúde desde a chegada",
+      title: "Fachada do Centro Médico Sapiranga",
+      description: "Fachada do Centro Médico Sapiranga",
       area: "entrada"
     },
     {
-      src: fachada2,
-      title: "Visão lateral do Centro Médico Sapiranga",
-      description: "Visão lateral da entrada do Centro Médico Sapiranga",
-      area: "entrada"
-    },
-    { 
-      src: img1, 
-      title: "Recepção", 
+      src: img1,
+      title: "Recepção",
       description: "Ambiente sofisticado com atendimento personalizado e área de espera confortável",
       area: "Recepção"
     },
@@ -81,60 +71,41 @@ export default function OurStructure() {
       area: "Recepção"
     },
     {
-      src: img1_4,
-      title: "Recepção do Centro Médico Sapiranga",
-      description: "Recepção elegante e funcional, com equipe treinada para atendimento de excelência",
-      area: "Recepção"
+      src: consultorioEco,
+      title: "Consultório de Ecografias",
+      description: "Consultório equipado com tecnologia avançada para exames de ecografia",
+      area: "Consultório"
     },
-
-   {
-    src: rec3,
-    title: "Recepção 2º andar",
-    description: "Recepção do segundo andar, com design contemporâneo e ambiente acolhedor",
-    area: "Recepção"
-   },
-   {
-   src: esperaRec3,
-    title: "Área de espera 2º andar",
-    description: "Área de espera do segundo andar, projetada para oferecer conforto e tranquilidade",
-    area: "Espera"
-},
-{
-  src: consultorioEco,
-  title: "Consultório de Ecografias",
-  description: "Consultório equipado com tecnologia avançada para exames de ecografia",
-  area: "Consultório"
-},
-{
-  src: consultorioEco2,
-  title: "Consultório de Ecografias",
-  description: "Consultório moderno e confortável, projetado para exames de ecografia com tecnologia de ponta",
-  area: "Consultório"
-},
-{
-  src: consultorioPsicologa,
-  title: "Consultório de Psicologia",
-  description: "Espaço dedicado à psicologia, com ambiente tranquilo e profissionais qualificados",
-  area: "Consultório"
-},
-{
-  src: consultorioGineco,
-  title: "Consultório de Ginecologia",    
-  description: "Consultório de ginecologia equipado com tecnologia avançada para atendimento especializado",
-  area: "Consultório"
-},
-{
-  src: consultorioOftalmo,
-  title: "Consultório de Oftalmologia",
-  description: "Consultório de oftalmologia moderno, com equipamentos de última geração para exames precisos",
-  area: "Consultório"
-},
-{
-  src: consultorioPediatria,
-  title: "Consultório de Pediatria",
-  description: "Consultório de pediatria projetado para oferecer um ambiente acolhedor e seguro para crianças",
-  area: "Consultório"
-}
+    {
+      src: consultorioEco2,
+      title: "Consultório de Ecografias",
+      description: "Consultório moderno e confortável, projetado para exames de ecografia com tecnologia de ponta",
+      area: "Consultório"
+    },
+    {
+      src: consultorioPsicologa,
+      title: "Consultório de Psicologia",
+      description: "Espaço dedicado à psicologia, com ambiente tranquilo e profissionais qualificados",
+      area: "Consultório"
+    },
+    {
+      src: consultorioGineco,
+      title: "Consultório de Ginecologia",
+      description: "Consultório de ginecologia equipado com tecnologia avançada para atendimento especializado",
+      area: "Consultório"
+    },
+    {
+      src: consultorioOftalmo,
+      title: "Consultório de Oftalmologia",
+      description: "Consultório de oftalmologia moderno, com equipamentos de última geração para exames precisos",
+      area: "Consultório"
+    },
+    {
+      src: consultorioPediatria,
+      title: "Consultório de Pediatria",
+      description: "Consultório de pediatria projetado para oferecer um ambiente acolhedor e seguro para crianças",
+      area: "Consultório"
+    }
   ];
 
   const features: Feature[] = [
@@ -201,7 +172,7 @@ export default function OurStructure() {
 
   useEffect(() => {
     let interval: ReturnType<typeof setInterval>;
-    
+
     if (isAutoPlaying) {
       interval = setInterval(nextImage, 5000);
     }
@@ -214,15 +185,15 @@ export default function OurStructure() {
   return (
     <div id="estrutura" className={styles.structureContainer}>
       <div className={styles.decorativeGrid} />
-      
+
       <div className={styles.contentWrapper}>
         <div className={styles.premiumHeader}>
           <span className={styles.subtitle}>Excelência em Saúde</span>
           <h1 className={styles.mainTitle}>
-            Estrutura médica <span>completa</span> 
+            Estrutura médica <span>completa</span>
           </h1>
           <p className={styles.leadText}>
-            Ambiente projetado com tecnologia de ponta, conforto e segurança 
+            Ambiente projetado com tecnologia de ponta, conforto e segurança
             para oferecer o melhor cuidado em saúde.
           </p>
         </div>
@@ -232,14 +203,14 @@ export default function OurStructure() {
             <div className={styles.galleryFrame}>
               <div className={styles.mainImageWrapper}>
                 {isImageLoading && <div className={styles.imageSkeleton} />}
-                <img 
-                  src={selectedImage.src} 
+                <img
+                  src={selectedImage.src}
                   alt={selectedImage.title}
                   className={`${styles.mainImage} ${isImageLoading ? styles.loading : ''}`}
                   onLoad={handleImageLoad}
                 />
                 <div className={styles.imageOverlay} />
-                
+
                 <div className={styles.imageInfo}>
                   <div className={styles.imageNumber}>
                     {selectedImage.area.toUpperCase()}
@@ -249,7 +220,7 @@ export default function OurStructure() {
                 </div>
 
                 <div className={styles.navigationControls}>
-                  <button 
+                  <button
                     className={styles.navButton}
                     onClick={() => {
                       prevImage();
@@ -259,7 +230,7 @@ export default function OurStructure() {
                   >
                     <FaChevronLeft />
                   </button>
-                  <button 
+                  <button
                     className={styles.navButton}
                     onClick={() => {
                       nextImage();
@@ -276,16 +247,15 @@ export default function OurStructure() {
             <div className={styles.thumbnailsWrapper}>
               <div className={styles.thumbnailsGrid}>
                 {galleryImages.map((image, index) => (
-                  <div 
+                  <div
                     key={index}
-                    className={`${styles.thumbnailItem} ${
-                      currentIndex === index ? styles.active : ''
-                    }`}
+                    className={`${styles.thumbnailItem} ${currentIndex === index ? styles.active : ''
+                      }`}
                     onClick={() => goToImage(index)}
                     title={`${image.area} - ${image.title}`}
                   >
-                    <img 
-                      src={image.src} 
+                    <img
+                      src={image.src}
                       alt={`${image.area} - ${index + 1}`}
                       className={styles.thumbnailImage}
                     />
@@ -302,7 +272,7 @@ export default function OurStructure() {
             <div className={styles.featuresIntro}>
               <h2 className={styles.introTitle}>Diferenciais da nossa estrutura</h2>
               <p className={styles.introText}>
-                Cada aspecto foi cuidadosamente planejado para oferecer 
+                Cada aspecto foi cuidadosamente planejado para oferecer
                 excelência no atendimento e conforto aos pacientes.
               </p>
             </div>

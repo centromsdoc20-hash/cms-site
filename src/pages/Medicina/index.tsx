@@ -1,25 +1,24 @@
 import BannerPages from "../../components/BannerPages";
 import banner from '../../assets/estrutura/suaEmpresa.jpg';
+import HowToHire from "../ParaSuaEmpresa/Components/CTA";
+import BenefitsForCompanies from "../ParaSuaEmpresa/Components/BenefitsForCompanies";
 import FilterItems from "../../components/FilterItems";
 import Texts from "../../components/UI/Texts";
-import BenefitsForCompanies from "./Components/BenefitsForCompanies";
-import HowToHire from "./Components/CTA";
 
-export default function ParaSuaEmpresa() {
+export default function Medicina() {
     return (
         <>
-            <BannerPages
-                backgroundImage={banner}
-                title="Para sua Empresa"
-                subtitle="Soluções completas em saúde ocupacional"
-                description="Mais de 45 anos cuidando da saúde corporativa com excelência e tecnologia"
-                specialties={['Medicina Ocupacional', 'Exames Laboratoriais', 'Perícias']}
-                buttonText="Solicitar Proposta"
-                buttonLink="/contato"
-                style="style2"
-            />
-
-            <Texts
+             <BannerPages
+                            backgroundImage={banner}
+                            title="Medicina do Trabalho"
+                            subtitle="Soluções completas em saúde ocupacional"
+                            description="Mais de 45 anos cuidando da saúde corporativa com excelência e tecnologia"
+                            specialties={['Medicina Ocupacional', 'Exames Laboratoriais', 'Perícias']}
+                            buttonText="Solicitar Proposta"
+                            buttonLink="/contato"
+                            style="style2"
+                        />
+                        <Texts
                 title="Tudo o que sua empresa precisa"
                 subtitle="Conheça nossas soluções em saúde ocupacional."
             />
@@ -108,7 +107,7 @@ export default function ParaSuaEmpresa() {
         id: 13,
         title: "Gestão de e-Social",
         description: "Serviço completo de gestão e adequação ao sistema e-Social do governo federal",
-        tag: "LAUDOS TÉCNICOS",
+        tag: "DOCUMENTOS TRABALHISTAS",
     },
     {
         id: 14,

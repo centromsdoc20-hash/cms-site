@@ -253,7 +253,7 @@ $active-shadow: 0 4px 12px rgba($color-bg-button, 0.25);
 .navButton {
   text-decoration: none;
   color: $nav-text-color;
-  font-weight: 500;
+  font-weight: 600;
   font-size: $font-size-text-md;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
@@ -588,6 +588,7 @@ $active-shadow: 0 4px 12px rgba($color-bg-button, 0.25);
     width: 70%;
     font-size: $font-size-text-md;
     padding: 0.9rem;
+    font-weight: bold;
   }
   
   .mobileCta {

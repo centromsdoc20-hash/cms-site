@@ -4,7 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import type { ReactNode } from 'react';
 import BannerPages from '../BannerPages';
 import { FaSearch, FaTimes, FaCalendarAlt,  FaThLarge, FaList, FaFilter,  FaBriefcaseMedical, FaCheckCircle, FaGraduationCap, } from 'react-icons/fa';
-import medicImage from '../../assets/sorrindo-alegre-feminino-gp-fazendo-anotacoes-eletronicas_151013-2668.webp';
+import medicImage from '../../assets/odonto/DSC_6718.jpg';
+import medicImage2 from '../../assets/odonto/WhatsApp Image 2026-03-10 at 16.26.34.jpeg';
+import medicImage3 from '../../assets/odonto/WhatsApp Image 2026-03-10 at 16.27.05.jpeg';
 
 
 export interface OdontoItem {
@@ -88,7 +90,7 @@ export default function OdontologiaGridSection({
     id: 2,
     name: "Dra. Patrícia Pinheiro",
     specialty: "Endodontia Especializada e Clínica Geral Avançada",
-    image: medicImage,
+    image: medicImage3,
     description: "Pós-graduada em Endodontia com foco em tratamentos de canal mecanizados e controle de infecções complexas. Especialista em diagnóstico e tratamento de dores agudas, utilizando protocolos modernos que priorizam o conforto do paciente e a agilidade na resolução clínica.",
     cro: "CRO-26655",
     experience: "Especialista em Endodontia",
@@ -103,7 +105,7 @@ export default function OdontologiaGridSection({
     id: 3,
     name: "Dra. Alexia Muller Willers",
     specialty: "Ortodontia e Ortopedia Funcional dos Maxilares",
-    image: medicImage,
+    image: medicImage2,
     description: "Clinica Geral, Ortodontia e Ortopedia Funcional dos Maxilares. Experiência em aparelhos fixos de última geração e sistemas de alinhadores invisíveis. Foco na correção funcional da mordida para prevenir desgastes dentários, dores de cabeça e problemas respiratórios.",
     cro: "CRO-29253",
     experience: "Especialista em Ortodontia",

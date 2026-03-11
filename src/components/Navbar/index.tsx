@@ -49,13 +49,15 @@ export default function Navbar() {
     { path: '/', label: 'Início' },
     { path: '/institucional', label: 'Centro Médico' },
     { path: '/especialidades', label: 'Especialidades' },
-    { path: '/contato', label: 'Contato' }
+    { path: '/contato', label: 'Contato' },
   ];
 
   const menuItemsBottom = [
     { path: '/ParaVoce', label: 'Sou Paciente' },
     { path: '/Para-sua-Empresa', label: 'Sou Empresa' },
-    { path: '/exames', label: 'Preciso de Exames' }
+    { path: '/exames', label: 'Preciso de Exames' },
+    { path: '/medicina-do-trabalho', label: 'Medicina do Trabalho' }
+
   ];
 
   const menuItemsAll = [...menuItemsTop, ...menuItemsBottom];

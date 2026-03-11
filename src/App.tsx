@@ -22,6 +22,7 @@ import CartaoAPF from "./components/APF";
 import FAQSection from "./components/FAQ";
 import ExamPreparations from "./pages/examPreparations";
 import TelemedicinaBanner from "./components/TeleMedicinaComponent";
+import Medicina from "./pages/Medicina";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path="/exames" element={<Exames />} />
         <Route path="/especialidades/:id" element={<EspecialidadePage />} />
         <Route path="/exames/:id" element={<ExamPreparations />} />
+        <Route path="/medicina-do-trabalho" element={<Medicina />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
       <FAQSection />

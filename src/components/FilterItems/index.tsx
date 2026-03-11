@@ -21,7 +21,7 @@ interface FilterItemsProps {
   items: FilterItem[];
   buttonText: string;
   showButton?: boolean;
-  disableNavigation: boolean; 
+  disableNavigation: boolean;
   onItemClick?: (item: FilterItem) => void;
 }
 
@@ -32,7 +32,7 @@ export default function FilterItems({
   items = [],
   buttonText,
   showButton,
-  disableNavigation = false, 
+  disableNavigation = false,
   onItemClick
 }: FilterItemsProps) {
   const navigate = useNavigate();
@@ -49,23 +49,23 @@ export default function FilterItems({
       onItemClick(item);
       return;
     }
-    
+
     if (disableNavigation) {
       return;
     }
-    
+
     if (item.specialtyId) {
       navigate(`/especialidades/${item.specialtyId}`);
       return;
     }
-    
+
     const specialtyId = item.title
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
       .replace(/\s+/g, '-')
       .replace(/[^a-z0-9-]/g, '');
-    
+
     navigate(`/especialidades/${specialtyId}`);
   };
 
@@ -74,7 +74,7 @@ export default function FilterItems({
     const mensagem = `Quero agendar uma consulta de ${itemTitle}`;
     const telefone = "555135000714";
     const whatsappUrl = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
-    
+
     window.open(whatsappUrl, '_blank');
   };
 
@@ -89,11 +89,11 @@ export default function FilterItems({
 
   const uniqueTags = useMemo(() => {
     const tags = items.map((item) => item.tag);
-    return ["TODAS AS ESPECIALIDADES", ...Array.from(new Set(tags))];
+    return ["TODAS", ...Array.from(new Set(tags))];
   }, [items]);
 
   const filteredItems = useMemo(() => {
-    return selectedTag && selectedTag !== "TODAS AS ESPECIALIDADES"
+    return selectedTag && selectedTag !== "TODAS"
       ? items.filter((item) => item.tag === selectedTag)
       : items;
   }, [items, selectedTag]);
@@ -103,7 +103,7 @@ export default function FilterItems({
       <div className={styles.headerSection}>
         <div className={styles.headerContent}>
           {subtitle && (
-            <motion.span 
+            <motion.span
               className={styles.subtitle}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -134,7 +134,7 @@ export default function FilterItems({
         </div>
       </div>
 
-      <motion.div 
+      <motion.div
         className={styles.filterSection}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -145,13 +145,12 @@ export default function FilterItems({
             {uniqueTags.map((tag, idx) => (
               <button
                 key={idx}
-                className={`${styles.tagButton} ${
-                  selectedTag === tag || (tag === "TODAS AS ESPECIALIDADES" && !selectedTag) 
-                    ? styles.active 
+                className={`${styles.tagButton} ${selectedTag === tag || (tag === "TODAS" && !selectedTag)
+                    ? styles.active
                     : ''
-                }`}
+                  }`}
                 onClick={() => {
-                  setSelectedTag(tag === "TODAS AS ESPECIALIDADES" ? "" : tag);
+                  setSelectedTag(tag === "TODAS" ? "" : tag);
                   setVisibleItems(6);
                 }}
               >
@@ -160,7 +159,7 @@ export default function FilterItems({
             ))}
           </div>
 
-          <div 
+          <div
             className={styles.mobileFilterToggle}
             onClick={() => setIsFilterOpen(!isFilterOpen)}
           >
@@ -182,13 +181,12 @@ export default function FilterItems({
               {uniqueTags.map((tag, idx) => (
                 <button
                   key={idx}
-                  className={`${styles.mobileTagButton} ${
-                    selectedTag === tag || (tag === "TODAS AS ESPECIALIDADES" && !selectedTag) 
-                      ? styles.active 
+                  className={`${styles.mobileTagButton} ${selectedTag === tag || (tag === "TODAS" && !selectedTag)
+                      ? styles.active
                       : ''
-                  }`}
+                    }`}
                   onClick={() => {
-                    setSelectedTag(tag === "TODAS AS ESPECIALIDADES" ? "" : tag);
+                    setSelectedTag(tag === "TODAS" ? "" : tag);
                     setVisibleItems(6);
                     setIsFilterOpen(false);
                   }}
@@ -201,19 +199,19 @@ export default function FilterItems({
         </AnimatePresence>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className={styles.resultsInfo}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
       >
         <span>
-          {filteredItems.length} especialidade{filteredItems.length !== 1 ? 's' : ''} 
-          {selectedTag && selectedTag !== "TODAS AS ESPECIALIDADES" && ` em ${selectedTag}`}
+          {filteredItems.length} especialidade{filteredItems.length !== 1 ? 's' : ''}
+          {selectedTag && selectedTag !== "TODAS" && ` em ${selectedTag}`}
         </span>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className={styles.grid}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -222,11 +220,11 @@ export default function FilterItems({
         {filteredItems.slice(0, visibleItems).map((item, index) => {
           return (
             <motion.div
-              key={item.id} 
+              key={item.id}
               className={`${styles.card} ${disableNavigation ? styles.noNavigate : ''}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ 
+              transition={{
                 duration: 0.4,
                 delay: index * 0.05,
               }}
@@ -235,39 +233,41 @@ export default function FilterItems({
             >
               <motion.div
                 className={styles.cardHeader}
-                whileHover={{ 
-                  backgroundColor: disableNavigation && !onItemClick 
-                    ? "inherit" 
-                    : "rgba(0, 123, 255, 0.02)" 
+                whileHover={{
+                  backgroundColor: disableNavigation && !onItemClick
+                    ? "inherit"
+                    : "rgba(0, 123, 255, 0.02)"
                 }}
               >
                 <div className={styles.cardIconContainerContainer}>
-                <div className={styles.cardIconContainer}>
-                  {item.icon || <FaStethoscope />}
-                </div>
-                <div className={styles.cardTitleTag}>
-                  <h3 className={styles.cardTitle}>{item.title}</h3>
-                  <span className={styles.cardTag}>{item.tag}</span>
+                  <div className={styles.cardIconContainer}>
+                    {item.icon || <FaStethoscope />}
+                  </div>
+                  <div className={styles.cardTitleTag}>
+                    <h3 className={styles.cardTitle}>{item.title}</h3>
+                    <span className={styles.cardTag}>{item.tag}</span>
                   </div>
                 </div>
                 <div className={styles.cardInfo}>
-                     <div className={styles.descriptionSection}>
-                      <p className={styles.specialtyDescription}>
-                        {item.description}
-                      </p>
-                    </div>
+                  <div className={styles.descriptionSection}>
+                    <p className={styles.specialtyDescription}>
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-                       <div className={styles.cardActions}>
-                      <Button 
-                        variant="primary" 
-                        onClick={(e) => {
-                          e.stopPropagation(); 
-                          handleAgendarConsulta(item.title, e);
-                        }}
-                      >
-                        Agendar Consulta
-                      </Button>
-                    </div>
+                <div className={styles.cardActions}>
+                  <Button
+                    variant="primary"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleAgendarConsulta(item.title, e);
+                    }}
+                  >
+                    {window.location.pathname === '/Para-sua-Empresa'
+                      ? 'Solicitar Atendimento'
+                      : 'Agendar Consulta'}
+                  </Button>
+                </div>
               </motion.div>
             </motion.div>
           );
@@ -275,7 +275,7 @@ export default function FilterItems({
       </motion.div>
 
       {showButton && visibleItems < filteredItems.length && (
-        <motion.div 
+        <motion.div
           className={styles.loadMoreSection}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
