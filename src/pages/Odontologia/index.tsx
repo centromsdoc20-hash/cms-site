@@ -28,13 +28,6 @@ export default function Odontologia() {
     categoria: "preventiva"
   },
   {
-    id: 2,
-    nome: "Restaurações Estéticas e Próteses",
-    icone: <FaFillDrip />,
-    descricao: "Reabilitação da estrutura dentária e substituição de elementos ausentes para devolver eficiência mastigatória",
-    categoria: "restauradora"
-  },
-  {
     id: 3,
     nome: "Clareamento Dentário",
     icone: <FaSnowflake />,
@@ -76,13 +69,6 @@ export default function Odontologia() {
     descricao: "Planejamento e correção do posicionamento dentário com aparelhos fixos ou alinhadores modernos",
     categoria: "ortodontia"
   },
-  {
-    id: 9,
-    nome: "Cirurgia Bucomaxilofacial",
-    icone: <FaStethoscope />,
-    descricao: "Intervenções cirúrgicas complexas incluindo remoção de sisos inclusos, correções mandibulares e tratamento de disfunções na ATM",
-    categoria: "cirurgia"
-  }
 ]
 
   return (
