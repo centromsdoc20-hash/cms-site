@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { ReactNode } from 'react';
 import BannerPages from '../BannerPages';
-import { FaSearch, FaTimes, FaCalendarAlt,  FaThLarge, FaList, FaFilter,  FaBriefcaseMedical, FaCheckCircle } from 'react-icons/fa';
+import { FaSearch, FaTimes, FaCalendarAlt,  FaThLarge, FaList, FaFilter,  FaBriefcaseMedical, FaCheckCircle, FaGraduationCap } from 'react-icons/fa';
 import medicImage from '../../assets/odonto/DSC_6718.jpg';
 import medicImage2 from '../../assets/odonto/WhatsApp Image 2026-03-10 at 16.26.34.jpeg';
 import medicImage3 from '../../assets/odonto/WhatsApp Image 2026-03-10 at 16.27.05.jpeg';
@@ -74,9 +74,10 @@ export default function OdontologiaGridSection({
   {
     id: 1,
     name: "Dra. Alice Alvarez Ramos",
-    specialty: "Clínica Geral Avançada, Odontologia Hospitalar, Ortodontia e Odontopediatria",
+    specialty: "Clínica Geral Avançada, Ortodontia e Odontopediatria",
     image: medicImage,
-    description: "Responsável Técnica com 25+ anos de experiência. Especialista em Odontologia Hospitalar, Pós-graduada em Ortodontia e Odontopediatria. Atua com visão sistêmica da saúde bucal, focada na longevidade dos tratamentos e cuidado multidisciplinar.",
+    description: "Responsável Técnica com 25+ anos de experiência. Pós-graduada em Ortodontia e Odontopediatria. Atua com visão sistêmica da saúde bucal, focada na longevidade dos tratamentos e cuidado multidisciplinar.",
+     experience: "25+ anos de experiência",
     cro: "CRO-16354",
     expertise: [
       "Ortodontia",
@@ -90,6 +91,7 @@ export default function OdontologiaGridSection({
     specialty: "Endodontia Especializada e Clínica Geral Avançada",
     image: medicImage3,
     description: "Pós-graduada em Endodontia com foco em tratamentos de canal mecanizados e controle de infecções complexas. Especialista em diagnóstico e tratamento de dores agudas, utilizando protocolos modernos que priorizam o conforto do paciente e a agilidade na resolução clínica.",
+    experience: "Pós graduada em Endodontia",
     cro: "CRO-26655",
     expertise: [
       "Endodontia Avançada",
@@ -104,6 +106,7 @@ export default function OdontologiaGridSection({
     specialty: "Ortodontia e Ortopedia Funcional dos Maxilares",
     image: medicImage2,
     description: "Clinica Geral, Ortodontia e Ortopedia Funcional dos Maxilares. Experiência em aparelhos fixos de última geração e sistemas de alinhadores invisíveis. Foco na correção funcional da mordida para prevenir desgastes dentários, dores de cabeça e problemas respiratórios.",
+    experience: "Mestranda em Ortodontia",
     cro: "CRO-29253",
     expertise: [
       "Ortodontia Digital",
@@ -419,6 +422,11 @@ export default function OdontologiaGridSection({
               <div className={styles.croBadge}>
                 <span className={styles.croValue}>{professional.cro}</span>
               </div>
+                            <div className={styles.experience}>
+                <FaGraduationCap className={styles.experienceIcon} />
+                <span className={styles.professionalExp}>{professional.experience}</span>
+              </div>
+
             </div>
             <p className={styles.professionalDescription}>
               {professional.description}

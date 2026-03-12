@@ -8,119 +8,82 @@ import {
   FaLaptopMedical,
   FaCertificate,
   FaHeartbeat,
-  FaCrown,
   FaFillDrip,
   FaTooth,
   FaTeeth,
   FaUserMd,
-  FaBaby,
   FaStethoscope
 } from 'react-icons/fa';
 import type { JSX } from "react";
 
 export default function Odontologia() {
   
-  const tratamentos: Array<{ id: number; nome: string; icone: JSX.Element; descricao: string; categoria: "cirurgia" | "estetica" | "preventiva" | "restauradora" | "ortodontia"; duracao: string; indicacao: string }> = [
-    {
-      id: 1,
-      nome: "Clínica Geral Avançada",
-      icone: <FaUserMd />,
-      descricao: "Restaurações, próteses, clareamento, extrações e tratamentos para bruxismo e raspagem de tártaro com precisão técnica",
-      categoria: "preventiva",
-      duracao: "Consulta de 40-60 min",
-      indicacao: "Manutenção preventiva e reabilitação bucal"
-    },
-    {
-      id: 3,
-      nome: "Clareamento Dentário",
-      icone: <FaSnowflake />,
-      descricao: "Procedimentos clínicos para recuperação do brilho e tonalidade natural do esmalte dental",
-      categoria: "estetica",
-      duracao: "1-2 sessões",
-      indicacao: "Dentes manchados ou amarelados"
-    },
-    {
-      id: 4,
-      nome: "Endodontia Especializada",
-      icone: <FaHeartbeat />,
-      descricao: "Tratamento de canal mecanizado com tecnologia avançada para salvar dentes e eliminar dores agudas",
-      categoria: "restauradora",
-      duracao: "1-2 sessões",
-      indicacao: "Dores dentárias agudas e infecções internas"
-    },
-    {
-      id: 5,
-      nome: "Ortodontia e Ortopedia Funcional",
-      icone: <FaTeethOpen />,
-      descricao: "Correção do posicionamento dentário e estruturas ósseas com aparelhos fixos ou alinhadores modernos",
-      categoria: "ortodontia",
-      duracao: "12-24 meses",
-      indicacao: "Má oclusão, desalinhamento e problemas funcionais"
-    },
-    {
-      id: 6,
-      nome: "Restaurações Estéticas e Próteses",
-      icone: <FaFillDrip />,
-      descricao: "Reabilitação da estrutura dentária e substituição de elementos ausentes para devolver eficiência mastigatória",
-      categoria: "restauradora",
-      duracao: "30-60 minutos a 2-4 sessões",
-      indicacao: "Cáries, fraturas e perda de dentes"
-    },
-    {
-      id: 7,
-      nome: "Odontopediatria",
-      icone: <FaBaby />,
-      descricao: "Cuidado especializado para crianças, focando no desenvolvimento saudável da arcada dentária desde a infância",
-      categoria: "preventiva",
-      duracao: "Consulta de 30-40 min",
-      indicacao: "Cuidados odontológicos infantis e prevenção"
-    },
-    {
-      id: 8,
-      nome: "Periodontia Preventiva",
-      icone: <FaTeeth />,
-      descricao: "Raspagem de tártaro e limpeza profilática para garantir saúde das gengivas e tecidos de suporte",
-      categoria: "preventiva",
-      duracao: "Sessão de 45-60 min",
-      indicacao: "Sangramento gengival e acúmulo de tártaro"
-    },
-    {
-      id: 9,
-      nome: "Tratamento de Bruxismo",
-      icone: <FaTeethOpen />,
-      descricao: "Diagnóstico e acompanhamento do ranger ou apertar de dentes com proteção do esmalte e alívio muscular",
-      categoria: "restauradora",
-      duracao: "Várias sessões",
-      indicacao: "Ranger de dentes, dores faciais e desgaste dental"
-    },
-    {
-      id: 10,
-      nome: "Extrações Dentárias",
-      icone: <FaUserInjured />,
-      descricao: "Procedimentos seguros para remoção de elementos dentários sem possibilidade de recuperação",
-      categoria: "cirurgia",
-      duracao: "Varia conforme complexidade",
-      indicacao: "Dentes comprometidos e extrações necessárias"
-    },
-    {
-      id: 11,
-      nome: "Próteses Dentárias",
-      icone: <FaCrown />,
-      descricao: "Confecção de próteses fixas e móveis personalizadas para reabilitação funcional e estética",
-      categoria: "restauradora",
-      duracao: "2-4 sessões",
-      indicacao: "Perda parcial ou total de dentes"
-    },
-    {
-      id: 12,
-      nome: "Exodontia de Siso",
-      icone: <FaStethoscope />,
-      descricao: "Remoção técnica de sisos inclusos e impactados com procedimentos seguros e especializados",
-      categoria: "cirurgia",
-      duracao: "Procedimento cirúrgico",
-      indicacao: "Siso impactado, incluso ou com indicação de remoção"
-    }
-  ];
+  const tratamentos: Array<{ id: number; nome: string; icone: JSX.Element; descricao: string; categoria: "cirurgia" | "estetica" | "preventiva" | "restauradora" | "ortodontia";   }> = [
+  
+  {
+    id: 1,
+    nome: "Clínica Geral: Reabilitação e Manutenção Preventiva",
+    icone: <FaUserMd />,
+    descricao: "Restaurações, próteses, clareamento, extrações e tratamentos para bruxismo e raspagem de tártaro com precisão técnica",
+    categoria: "preventiva"
+  },
+  {
+    id: 2,
+    nome: "Restaurações Estéticas e Próteses",
+    icone: <FaFillDrip />,
+    descricao: "Reabilitação da estrutura dentária e substituição de elementos ausentes para devolver eficiência mastigatória",
+    categoria: "restauradora"
+  },
+  {
+    id: 3,
+    nome: "Clareamento Dentário",
+    icone: <FaSnowflake />,
+    descricao: "Procedimentos clínicos para recuperação do brilho e tonalidade natural do esmalte dental",
+    categoria: "estetica"
+  },
+  {
+    id: 4,
+    nome: "Periodontia Preventiva",
+    icone: <FaTeeth />,
+    descricao: "Raspagem de tártaro e limpeza profilática para garantir saúde das gengivas e tecidos de suporte",
+    categoria: "preventiva"
+  },
+  {
+    id: 5,
+    nome: "Extrações Dentárias",
+    icone: <FaUserInjured />,
+    descricao: "Procedimentos seguros para remoção de elementos dentários sem possibilidade de recuperação",
+    categoria: "cirurgia"
+  },
+  {
+    id: 6,
+    nome: "Tratamento de Bruxismo",
+    icone: <FaTeethOpen />,
+    descricao: "Diagnóstico e acompanhamento do ranger ou apertar de dentes com proteção do esmalte e alívio muscular",
+    categoria: "restauradora"
+  },
+  {
+    id: 7,
+    nome: "Endodontia Especializada",
+    icone: <FaHeartbeat />,
+    descricao: "Tratamento da polpa dentária (canal) para salvar o dente natural e eliminar quadros dolorosos agudos",
+    categoria: "restauradora"
+  },
+  {
+    id: 8,
+    nome: "Ortodontia: Harmonia e Função Oclusal",
+    icone: <FaTeethOpen />,
+    descricao: "Planejamento e correção do posicionamento dentário com aparelhos fixos ou alinhadores modernos",
+    categoria: "ortodontia"
+  },
+  {
+    id: 9,
+    nome: "Cirurgia Bucomaxilofacial",
+    icone: <FaStethoscope />,
+    descricao: "Intervenções cirúrgicas complexas incluindo remoção de sisos inclusos, correções mandibulares e tratamento de disfunções na ATM",
+    categoria: "cirurgia"
+  }
+]
 
   return (
     <OdontologiaGridSection
