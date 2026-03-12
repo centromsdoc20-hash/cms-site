@@ -16,7 +16,7 @@ import { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const API_URL = 'https://send-email-lilac.vercel.app/api/send-email';
+const API_URL = 'https://send-email-snowy.vercel.app/api/send-email';
 
 export const Footer = ({ id = "contato" }) => {
     const [loading, setLoading] = useState(false);
@@ -56,7 +56,6 @@ export const Footer = ({ id = "contato" }) => {
         e.preventDefault();
         setLoading(true);
 
-        // Validações básicas
         if (!formData.nome || !formData.sobrenome || !formData.email || !formData.telefone || !formData.mensagem) {
             toast.error('Todos os campos são obrigatórios.');
             setLoading(false);
@@ -104,7 +103,6 @@ export const Footer = ({ id = "contato" }) => {
             if (response.ok && result.success) {
                 toast.success('✅ Mensagem enviada com sucesso! Entraremos em contato em breve.');
                 
-                // Limpa o formulário
                 setFormData({
                     nome: '',
                     sobrenome: '',
@@ -113,7 +111,6 @@ export const Footer = ({ id = "contato" }) => {
                     mensagem: ''
                 });
                 
-                // Reseta os campos do formulário
                 const form = e.currentTarget;
                 form.reset();
             } else {

@@ -14,7 +14,6 @@ import {
   FaTeeth,
   FaUserMd,
   FaBaby,
-  FaHospital,
   FaStethoscope
 } from 'react-icons/fa';
 import type { JSX } from "react";
@@ -30,15 +29,6 @@ export default function Odontologia() {
       categoria: "preventiva",
       duracao: "Consulta de 40-60 min",
       indicacao: "Manutenção preventiva e reabilitação bucal"
-    },
-    {
-      id: 2,
-      nome: "Odontologia Hospitalar",
-      icone: <FaHospital />,
-      descricao: "Atendimento especializado para pacientes que demandam cuidados especiais ou suporte em ambiente hospitalar",
-      categoria: "preventiva",
-      duracao: "Varia conforme necessidade",
-      indicacao: "Pacientes com condições sistêmicas especiais"
     },
     {
       id: 3,

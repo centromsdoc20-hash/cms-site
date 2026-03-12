@@ -78,9 +78,7 @@ export default function OdontologiaGridSection({
     image: medicImage,
     description: "Responsável Técnica com 25+ anos de experiência. Especialista em Odontologia Hospitalar, Pós-graduada em Ortodontia e Odontopediatria. Atua com visão sistêmica da saúde bucal, focada na longevidade dos tratamentos e cuidado multidisciplinar.",
     cro: "CRO-16354",
-    experience: "25+ anos",
     expertise: [
-      "Odontologia Hospitalar",
       "Ortodontia",
       "Odontopediatria",
       "Clínica Geral Avançada"
@@ -93,7 +91,6 @@ export default function OdontologiaGridSection({
     image: medicImage3,
     description: "Pós-graduada em Endodontia com foco em tratamentos de canal mecanizados e controle de infecções complexas. Especialista em diagnóstico e tratamento de dores agudas, utilizando protocolos modernos que priorizam o conforto do paciente e a agilidade na resolução clínica.",
     cro: "CRO-26655",
-    experience: "Especialista em Endodontia",
     expertise: [
       "Endodontia Avançada",
       "Tratamento de Canal Mecanizado",
@@ -108,7 +105,6 @@ export default function OdontologiaGridSection({
     image: medicImage2,
     description: "Clinica Geral, Ortodontia e Ortopedia Funcional dos Maxilares. Experiência em aparelhos fixos de última geração e sistemas de alinhadores invisíveis. Foco na correção funcional da mordida para prevenir desgastes dentários, dores de cabeça e problemas respiratórios.",
     cro: "CRO-29253",
-    experience: "Especialista em Ortodontia",
     expertise: [
       "Ortodontia Digital",
       "Ortopedia Funcional",
@@ -331,12 +327,7 @@ export default function OdontologiaGridSection({
                     <div className={styles.cardBody}>
                       <p className={styles.itemDescription}>{item.descricao}</p>
                       
-                      {item.duracao && (
-                        <div className={styles.itemMeta}>
-                          <span className={styles.metaLabel}>Duração:</span>
-                          <span className={styles.metaValue}>{item.duracao}</span>
-                        </div>
-                      )}
+                     
                       
                       {item.indicacao && (
                         <div className={styles.itemMeta}>
@@ -426,12 +417,7 @@ export default function OdontologiaGridSection({
             <h3 className={styles.professionalName}>{professional.name}</h3>
             <div className={styles.professionalMeta}>
               <div className={styles.croBadge}>
-                <span className={styles.croLabel}>CRO</span>
                 <span className={styles.croValue}>{professional.cro}</span>
-              </div>
-              <div className={styles.experience}>
-                <FaGraduationCap className={styles.experienceIcon} />
-                <span className={styles.professionalExp}>{professional.experience}</span>
               </div>
             </div>
             <p className={styles.professionalDescription}>
