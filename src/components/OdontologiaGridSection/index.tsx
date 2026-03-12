@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { ReactNode } from 'react';
 import BannerPages from '../BannerPages';
-import { FaSearch, FaTimes, FaCalendarAlt,  FaThLarge, FaList, FaFilter,  FaBriefcaseMedical, FaCheckCircle, FaGraduationCap, } from 'react-icons/fa';
+import { FaSearch, FaTimes, FaCalendarAlt,  FaThLarge, FaList, FaFilter,  FaBriefcaseMedical, FaCheckCircle } from 'react-icons/fa';
 import medicImage from '../../assets/odonto/DSC_6718.jpg';
 import medicImage2 from '../../assets/odonto/WhatsApp Image 2026-03-10 at 16.26.34.jpeg';
 import medicImage3 from '../../assets/odonto/WhatsApp Image 2026-03-10 at 16.27.05.jpeg';
