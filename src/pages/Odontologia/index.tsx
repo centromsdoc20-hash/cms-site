@@ -8,11 +8,9 @@ import {
   FaLaptopMedical,
   FaCertificate,
   FaHeartbeat,
-  FaFillDrip,
   FaTooth,
   FaTeeth,
   FaUserMd,
-  FaStethoscope
 } from 'react-icons/fa';
 import type { JSX } from "react";
 
