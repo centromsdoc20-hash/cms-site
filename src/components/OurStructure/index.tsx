@@ -110,14 +110,9 @@ export default function OurStructure() {
 
   const features: Feature[] = [
     {
-      icon: <FaShieldAlt />,
-      title: "Tecnologia Avançada",
-      description: "Equipamentos de última geração em todas as especialidades médicas"
-    },
-    {
       icon: <FaUserMd />,
-      title: "Especialistas Qualificados",
-      description: "Corpo clínico formado em centros de referência nacional e internacional"
+      title: "Profissionais Experientes",
+      description: "Equipe altamente capacitada com atuação sólida em diversas áreas da saúde"
     },
     {
       icon: <FaHeartbeat />,

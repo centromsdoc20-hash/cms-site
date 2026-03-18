@@ -163,16 +163,9 @@ const FAQSectionCompact = () => {
               </div>
             </div>
             <div className={styles.exameItem}>
-              <FaCheckCircle />
-              <div>
-                <strong>100% digitais</strong>
-                <span>resultados</span>
-              </div>
-            </div>
-            <div className={styles.exameItem}>
               <FaClock />
               <div>
-                <strong>24h</strong>
+                <strong>24h<br></br>(De acordo com exame realizado)</strong>
                 <span>para laudos</span>
               </div>
             </div>

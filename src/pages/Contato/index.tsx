@@ -498,17 +498,7 @@ export default function Contato() {
                                 <p>Junte-se a uma empresa que valoriza pessoas e transforma vidas</p>
                             </div>
                             <div className={styles.benefitsGrid}>
-                                <motion.div 
-                                    className={styles.benefitCard}
-                                    variants={cardVariants}
-                                    whileHover={{ y: -5 }}
-                                >
-                                    <div className={styles.benefitIcon}>
-                                        <FaBriefcase />
-                                    </div>
-                                    <h4>Plano de Carreira</h4>
-                                    <p>Oportunidades reais de crescimento e desenvolvimento profissional</p>
-                                </motion.div>
+                       
                                 <motion.div 
                                     className={styles.benefitCard}
                                     variants={cardVariants}
@@ -519,17 +509,6 @@ export default function Contato() {
                                     </div>
                                     <h4>Missão com Propósito</h4>
                                     <p>Trabalhe em uma empresa que realmente faz diferença na vida das pessoas</p>
-                                </motion.div>
-                                <motion.div 
-                                    className={styles.benefitCard}
-                                    variants={cardVariants}
-                                    whileHover={{ y: -5 }}
-                                >
-                                    <div className={styles.benefitIcon}>
-                                        <FaRocket />
-                                    </div>
-                                    <h4>Ambiente Inovador</h4>
-                                    <p>Tecnologia de ponta e metodologias modernas de trabalho</p>
                                 </motion.div>
                                 <motion.div 
                                     className={styles.benefitCard}

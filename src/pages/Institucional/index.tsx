@@ -4,7 +4,7 @@ import banner from '../../assets/banner-internal 1.webp';
 import styles from './styles.module.scss';
 import aboutImage from '../../assets/banner-internal 1.webp';
 import { FaBullseye, FaGem, FaHandsHelping } from "react-icons/fa";
-import { MdHealthAndSafety, MdMedicalServices, MdScience } from "react-icons/md";
+import { MdHealthAndSafety, MdScience, MdVerified } from "react-icons/md";
 import AlternatingTimeline from "../../components/TimeLine/TimeLine";
 import OurStructure from "../../components/OurStructure";
 import Texts from "../../components/UI/Texts";
@@ -36,10 +36,6 @@ export default function Institucional() {
         {
             left: "Setor de enfermagem preparado para atendimentos humanizados e ágeis.",
             right: "Ambulatório completo para cuidados clínicos e observação.",
-        },
-        {
-            left: "Laboratório de análises clínicas com resultados rápidos e precisos.",
-            right: "Salas equipadas com tecnologia de ponta para exames como RX, ecografias, ECG, EEG, espirometria, endoscopia, colonoscopia e muitos outros.",
         }
     ];
 
@@ -47,18 +43,18 @@ export default function Institucional() {
         {
             icon: <MdHealthAndSafety />,
             title: "Atendimento Personalizado",
-            description: "Cada paciente recebe atenção individualizada com planos de tratamento específicos."
-        },
-        {
-            icon: <MdMedicalServices />,
-            title: "Equipamentos de Última Geração",
-            description: "Tecnologia avançada para diagnósticos precisos e tratamentos eficazes."
+            description: "Cada paciente recebe atenção individualizada."
         },
         {
             icon: <MdScience />,
             title: "Laboratório Interno",
             description: "Resultados rápidos e confiáveis com controle total de qualidade."
-        }
+        },
+        {
+    icon: <MdVerified />,
+    title: "Confiança e Qualidade",
+    description: "Compromisso com excelência, ética e segurança em cada atendimento."
+}
     ];
 
 
@@ -67,7 +63,7 @@ export default function Institucional() {
             <BannerPages
                 backgroundImage={banner}
                 title="Centro Médico Sapiranga"
-                subtitle="Excelência em saúde com tecnologia de ponta e atendimento humanizado"
+                subtitle="Excelência em saúde e atendimento humanizado"
             />
             <SectionNav />
             <div id="historia" className={styles.historyContainer}>
