@@ -60,7 +60,6 @@ $breakpoint-xs: 576px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(8px);
     z-index: -1;
   }
     &::after {
