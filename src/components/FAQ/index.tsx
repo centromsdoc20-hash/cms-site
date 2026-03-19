@@ -13,7 +13,6 @@ import {
   FaWhatsapp,
   FaCalendarAlt,
   FaHospital,
-  FaCheckCircle,
   FaUserMd
 } from 'react-icons/fa';
 

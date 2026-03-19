@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import {
   FaChevronLeft,
   FaChevronRight,
-  FaShieldAlt,
   FaUserMd,
   FaHeartbeat,
   FaMicroscope,
