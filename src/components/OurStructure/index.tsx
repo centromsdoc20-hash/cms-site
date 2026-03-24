@@ -17,7 +17,7 @@ import consultorioEco2 from '../../assets/estrutura/consultorioEco2.jpg';
 import consultorioPsicologa from '../../assets/estrutura/consultorioPsicologa.jpg';
 import consultorioGineco from '../../assets/estrutura/consultorioGineco.jpg';
 import consultorioOftalmo from '../../assets/estrutura/consultorioOftalmo.jpg';
-import consultorioPediatria from '../../assets/estrutura/pediatria.jpg';
+import consultorioPediatria from '../../assets/estrutura/pediatria.jpeg';
 
 
 interface GalleryImage {
@@ -26,7 +26,6 @@ interface GalleryImage {
   description: string;
   area: string;
 }
-
 interface Feature {
   icon: React.ReactNode;
   title: string;

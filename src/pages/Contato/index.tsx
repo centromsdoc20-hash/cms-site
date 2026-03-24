@@ -2,6 +2,9 @@ import BannerPages from "../../components/BannerPages";
 import styles from './styles.module.scss';
 import banner from '../../assets/medical-physician-doctor-man.jpg'; 
 import { motion } from 'framer-motion';
+import { useState, useRef } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { 
     FaPaperPlane, 
     FaUser, 
@@ -18,9 +21,6 @@ import {
     FaUpload,
     FaTimes
 } from 'react-icons/fa';
-import { useState, useRef } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const API_URL = 'https://send-email-lilac.vercel.app/api/send-email';
 
