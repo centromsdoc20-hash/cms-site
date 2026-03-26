@@ -6,6 +6,7 @@ import WhatDoesCard from "./Components/WhatDoesCard";
 import WhenToSeekCard from "./Components/WhenToSeekCard";
 import Sidebar from "./Components/Sidebar";
 import FinalCTA from "./Components/FinalCTA";
+import { formatarProfissional } from "./data/especialidadesUtils";
 
 import styles from './styles.module.scss';
 
@@ -39,6 +40,8 @@ export default function EspecialidadePage() {
     );
   }
 
+  const profissionalTitle = formatarProfissional(especialidade.title);
+
   const handleAgendarConsulta = () => {
     const mensagem = `Olá! Gostaria de agendar uma consulta de ${especialidade.title} no Centro Médico Sapiranga.`;
     const telefone = "555135000714";
@@ -64,7 +67,7 @@ export default function EspecialidadePage() {
         subtitle={especialidade.description}
         description={especialidade.longDescription}
         image={especialidade.image || "default-image.jpg"}
-        buttonText={`Agendar ${especialidade.title}`}
+        buttonText={`Agendar consulta com ${profissionalTitle}`}
         specialtyId={especialidade.id}
         breadcrumb={[
           { name: 'Início', path: '/' },
@@ -103,8 +106,6 @@ export default function EspecialidadePage() {
           </div>
         </div>
       </section>
-      
-   
       
       <FinalCTA 
         handleAgendarConsulta={handleAgendarConsulta}

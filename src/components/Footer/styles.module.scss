@@ -255,7 +255,7 @@ $breakpoint-sm: 576px;
       font-size: 1rem;
       transition: all 0.3s ease;
       background: $color-on-white-bg;
-
+      font-family: inherit;
       &:focus {
         outline: none;
         border-color: $color-hover-text; 
@@ -268,7 +268,7 @@ $breakpoint-sm: 576px;
     }
 
     textarea {
-      resize: vertical;
+      resize: none;
       min-height: 120px;
     }
   }

@@ -20,7 +20,7 @@ const HowToHire = () => {
   };
 
   const handlePhoneCall = () => {
-    window.open('tel:+555131036254', '_blank');
+    window.open('tel:+555135000714', '_blank');
   };
 
   const steps = [

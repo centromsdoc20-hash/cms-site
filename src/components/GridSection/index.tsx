@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import type { ReactNode } from 'react';
 import BannerPages from '../BannerPages';
 import { FaSearch, FaTimes, FaStethoscope, FaHeartbeat, FaBrain, FaTooth, FaEye, FaBaby, FaArrowRight, FaUserMd, FaThLarge, FaList, FaFilter, FaInfoCircle, FaCalendarAlt } from 'react-icons/fa';
+import { IoIosNutrition } from "react-icons/io";
 import logo from '../../assets/logo-CMS-site.webp';
 import { useNavigate } from 'react-router-dom';
 import logoSimples from '../../assets/logoSimples.webp';
@@ -53,6 +54,7 @@ const tagIcons: Record<string, ReactNode> = {
   'odontologia': <FaTooth />,
   'oftalmologia': <FaEye />,
   'pediatria': <FaBaby />,
+  'nutrição': <IoIosNutrition />,
 };
 
 export default function GridSection({

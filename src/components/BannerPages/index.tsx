@@ -211,16 +211,10 @@ const handleButtonClick = () => {
                 key={index} 
                 className={styles.specialtyTag}
                 style={{
-                  background: index % 3 === 0 ? 'rgba(13, 148, 136, 0.1)' : 
-                             index % 3 === 1 ? 'rgba(59, 130, 246, 0.1)' : 
-                             'rgba(5, 150, 105, 0.1)',
-                  color: index % 3 === 0 ? '#0d9488' : 
-                         index % 3 === 1 ? '#3b82f6' : 
-                         '#059669',
-                  border: index % 3 === 0 ? '1px solid rgba(13, 148, 136, 0.2)' : 
-                          index % 3 === 1 ? '1px solid rgba(59, 130, 246, 0.2)' : 
-                          '1px solid rgba(5, 150, 105, 0.2)'
-                }}
+  background: 'rgba(13, 148, 136, 0.1)',
+  border: '1px solid rgba(13, 148, 136, 0.2)',
+  color: 'rgb(13, 148, 136)'
+}}
               >
                 {specialty}
               </span>

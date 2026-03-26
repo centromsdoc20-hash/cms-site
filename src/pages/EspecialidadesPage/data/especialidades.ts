@@ -4646,7 +4646,7 @@ export const especialidades: Especialidade[] = [
     {
       id: 4,
       title: "Cálculos Renais (Pedras nos Rins)",
-      description: "Avaliação de calculos renais",
+      description: "Avaliação de cálculos renais",
       iconName: "FaGem"
     },
     {

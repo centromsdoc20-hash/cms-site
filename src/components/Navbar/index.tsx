@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className={styles.contactInfo}>
             <div className={styles.contactItem}>
               <FaPhoneAlt />
-              <a href="tel:+555131036254">(51) 3103-6254</a>
+              <a href="tel:+555135000714">(51) 3500-0714</a>
             </div>
             <div className={styles.contactItem}>
               <FaMapMarkerAlt />

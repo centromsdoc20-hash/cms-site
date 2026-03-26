@@ -15,7 +15,6 @@ import {
     FaClinicMedical,
     FaHospital,
     FaShieldAlt,
-    FaNotesMedical,
     FaAllergies,
     FaTint,
     FaFemale,
@@ -24,6 +23,7 @@ import {
     FaCertificate,
     FaUsers
 } from 'react-icons/fa';
+import { IoIosNutrition } from "react-icons/io";
 
 type GridItem = {
     id: number;
@@ -115,7 +115,7 @@ export default function Especialidades() {
         {
             id: 13,
             nome: "Nutrição",
-            icone: <FaNotesMedical />,
+            icone: <IoIosNutrition />,
             descricao: "Orientações nutricionais personalizadas",
             tag: "SAÚDE"
         },
@@ -214,7 +214,7 @@ export default function Especialidades() {
             itemType="especialidades"
             ctaTitle="Precisa de ajuda para escolher a especialidade?"
             ctaDescription="Nossa equipe de atendimento pode orientar você sobre o cuidado mais adequado"
-            primaryButtonText="Falar com Atendimento"
+            primaryButtonText="Quero ser orientado"
             secondaryButtonText="(51) 3500-0714"
             features={[
                 { icon: <FaHistory />, text: '45+ anos de experiência' },

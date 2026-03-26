@@ -1,5 +1,6 @@
 import { FaBrain, FaCheckCircle } from 'react-icons/fa';
 import type { BenefitItem, ServiceItem } from '../../data/especialidades';
+import { formatarProfissional } from '../../data/especialidadesUtils';
 import styles from './styles.module.scss';
 
 interface WhatDoesCardProps {
@@ -15,6 +16,7 @@ export default function WhatDoesCard({
   benefits,
   services 
 }: WhatDoesCardProps) {
+  const profissionalTitle = formatarProfissional(title);
   
   return (
     <div className={styles.whatDoesCard}>
@@ -22,7 +24,7 @@ export default function WhatDoesCard({
         <div className={styles.headerIcon}>
           <FaBrain />
         </div>
-        <h2>O que faz um {title.toLowerCase()}?</h2>
+        <h2>O que faz um {profissionalTitle}?</h2>
         <p className={styles.cardSubtitle}>Entenda a atuação do especialista</p>
       </div>
       
