@@ -1,5 +1,5 @@
 import BannerPages from "../../components/BannerPages";
-import banner from '../../assets/estrutura/suaEmpresa.jpg';
+import banner from '../../assets/calendario2026.jpeg';
 import FilterItems from "../../components/FilterItems";
 import Texts from "../../components/UI/Texts";
 import BenefitsForCompanies from "./Components/BenefitsForCompanies";
