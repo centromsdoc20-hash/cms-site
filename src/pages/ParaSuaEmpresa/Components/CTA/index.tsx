@@ -13,7 +13,7 @@ import styles from './styles.module.scss';
 
 const HowToHire = () => {
   const handleWhatsAppContact = () => {
-    const phoneNumber = "555135000714"; 
+    const phoneNumber = "555189666127"; 
     const message = `Olá! Gostaria de informações sobre os serviços de saúde ocupacional para minha empresa. Poderiam me ajudar?`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
