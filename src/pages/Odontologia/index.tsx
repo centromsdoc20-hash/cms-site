@@ -85,6 +85,9 @@ export default function Odontologia() {
       features={[
         { icon: <FaTooth />, text: 'Especialistas Credenciados' },
         { icon: <FaCertificate />, text: 'Formação Diversificada' },
+        {icon: <FaLaptopMedical />, text: 'Planejamento Personalizado' },
+        {icon: <FaSmile />, text: 'Atendimento humanizado' },
+        {icon: <FaSnowflake />, text: "Facilidade de pagamentos"}
       ]}
     />
   );
