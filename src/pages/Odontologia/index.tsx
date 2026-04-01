@@ -6,7 +6,6 @@ import {
   FaTeethOpen,
   FaUserInjured,
   FaLaptopMedical,
-  FaCertificate,
   FaHeartbeat,
   FaTooth,
   FaTeeth,
