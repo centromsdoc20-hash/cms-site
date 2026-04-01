@@ -84,7 +84,6 @@ export default function Odontologia() {
       secondaryButtonText="(51) 3500-0714"
       features={[
         { icon: <FaTooth />, text: 'Especialistas Credenciados' },
-        { icon: <FaCertificate />, text: 'Formação Diversificada' },
         {icon: <FaLaptopMedical />, text: 'Planejamento Personalizado' },
         {icon: <FaSmile />, text: 'Atendimento humanizado' },
         {icon: <FaSnowflake />, text: "Facilidade de pagamentos"}
