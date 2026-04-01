@@ -64,7 +64,7 @@ export const About = () => {
             />
             <div className={styles.imageOverlay} aria-hidden="true" />
             <figcaption className={styles.floatingExperience}>
-              <span className={styles.experienceNumber}>47</span>
+              <span className={styles.experienceNumber}>48</span>
               <span className={styles.experienceText}>Anos de Excelência</span>
             </figcaption>
           </div>

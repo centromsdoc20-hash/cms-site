@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import cartaoImg from '../../assets/apf.webp';
-import { FaCheckCircle, FaArrowRight, FaCreditCard, FaShieldAlt, FaHandshake } from 'react-icons/fa';
+import { FaCheckCircle, FaArrowRight, FaCreditCard, FaShieldAlt, FaHandshake, FaPhoneAlt } from 'react-icons/fa';
 import Button from '../UI/Button';
 import { motion } from 'framer-motion';
 
@@ -112,9 +112,17 @@ export default function CartaoAPF() {
                                 <p className={styles.ctaNote}>
                                     Sem custo de adesão • Emissão imediata
                                 </p>
+                                  <div className={styles.contactInfo}>
+            <FaPhoneAlt className={styles.phoneIcon} />
+            <a href="tel:+55515193481804" className={styles.phoneLink}>
+              (51) 99348-1804
+            </a>
+            <span className={styles.contactText}>Fale com nossa equipe</span>
+          </div>
                             </div>
                         </motion.div>
                     </div>
+                    
                 </div>
             </motion.section>
         );

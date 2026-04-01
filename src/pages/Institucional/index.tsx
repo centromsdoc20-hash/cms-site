@@ -51,10 +51,10 @@ export default function Institucional() {
             description: "Resultados rápidos e confiáveis com controle total de qualidade."
         },
         {
-    icon: <MdVerified />,
-    title: "Confiança e Qualidade",
-    description: "Compromisso com excelência, ética e segurança em cada atendimento."
-}
+            icon: <MdVerified />,
+            title: "Confiança e Qualidade",
+            description: "Compromisso com excelência, ética e segurança em cada atendimento."
+        }
     ];
 
 
@@ -71,26 +71,21 @@ export default function Institucional() {
                     <span className={styles.sectionSubtitle}>Nossa trajetória</span>
                     <h2 className={styles.sectionTitle}>Uma História de <span className={styles.highlight}>Cuidado e Excelência</span></h2>
                 </div>
-                
+
                 <section className={styles.historyContent}>
                     <div className={styles.imageContainer}>
                         <img src={aboutImage} alt="Centro Médico Sapiranga" />
                         <div className={styles.experienceBadge}>
-                            <span className={styles.years}>47</span>
+                            <span className={styles.years}>48</span>
                             <span className={styles.text}>Anos de Experiência</span>
                         </div>
                     </div>
                     <div className={styles.textContainer}>
                         <p className={styles.introText}>
-                            Fundado em 1º de março de 1978, o Centro Médico Sapiranga é uma instituição
-                            comprometida em oferecer excelência na prestação de serviços de saúde.
+                           Fundado em 1º de março de 1978, o Centro Médico Sapiranga é um local dedicado ao cuidado com a saúde. Nosso centro de serviços médicos conta com uma equipe que não só é tecnicamente qualificada, mas também é empática. Mantemos laços fortes de confiança com a nossa comunidade, em razão da forma como organizamos nossos serviços e do compromisso da nossa equipe.
                         </p>
                         <p>
-                            Com instalações estrategicamente projetadas para este propósito, oferecemos
-                            uma ampla gama de serviços próprios médicos. Através da eficiente organização
-                            de nossas operações, do comprometimento empático e da competência técnica
-                            de nossa equipe, mantemos uma sólida relação de confiança com a comunidade
-                            local, sendo a base de nossa viabilidade e longevidade.
+                          Através da organização eficiente, do comprometimento humano e da competência técnica da nossa equipe, mantemos uma relação sólida de confiança com a comunidade local.
                         </p>
                         <div className={styles.statsContainer}>
                             <div className={styles.statItem}>
@@ -115,13 +110,13 @@ export default function Institucional() {
                     <span className={styles.sectionSubtitle}>Nossa essência</span>
                     <h2 className={styles.sectionTitle2}>Missão, Visão e <span className={styles.highlight}>Valores</span></h2>
                 </div>
-                
+
                 <div className={styles.missionContainer}>
                     <div className={styles.missionStatement}>
                         <h3>Nossa Missão</h3>
                         <p>Cuidar da saúde com qualidade, proximidade e compromisso com o bem-estar da comunidade.</p>
                     </div>
-                    
+
                     <div className={styles.cardsGrid}>
                         <div className={`${styles.card} ${styles.featuredCard}`}>
                             <div className={styles.cardIcon}>
@@ -156,7 +151,7 @@ export default function Institucional() {
                     <h2 className={styles.sectionTitle}>Nossos <span className={styles.highlight}>Serviços</span></h2>
                     <div className={styles.titleDivider}></div>
                 </div>
-                
+
                 <div className={styles.servicesGrid}>
                     {services.map((service, index) => (
                         <div key={index} className={styles.serviceCard}>
@@ -174,7 +169,7 @@ export default function Institucional() {
                     <h2 className={styles.sectionTitle2}>Princípios que <span className={styles.highlight}>Nos Guiam</span></h2>
                     <div className={styles.titleDivider}></div>
                 </div>
-                
+
                 <div className={styles.principlesContainer}>
                     <AlternatingTimeline items={principles} line="timelineLine" />
                 </div>
@@ -186,17 +181,17 @@ export default function Institucional() {
                     <h2 className={styles.sectionTitle2}>Estrutura de <span className={styles.highlight}>Excelência</span></h2>
                     <div className={styles.titleDivider}></div>
                 </div>
-                
+
                 <OurStructure />
-                
+
                 <Texts
                     title="Tecnologia e Estrutura que Cuidam de Você"
                     subtitle="No Centro Médico Sapiranga, nossa estrutura foi pensada para oferecer não apenas eficiência, mas também conforto e segurança em todos os momentos do seu atendimento. Com equipamentos modernos e ambientes projetados para o bem-estar, garantimos que cada detalhe contribua para sua tranquilidade e recuperação."
                 />
-               
+
                 <AlternatingTimeline items={estrutura} line="timelineLineAlt" />
-                
-                <Texts 
+
+                <Texts
                     title="Um espaço completo, criado para cuidar de você"
                     subtitle="No Centro Médico Sapiranga, unimos tecnologia, conforto e atendimento humanizado para oferecer uma experiência de saúde que vai além das expectativas. Aqui, você encontra não apenas estrutura, mas um ambiente pensado para acolher, escutar e cuidar com dedicação. Estamos prontos para estar ao seu lado em todos os momentos, porque para nós, cuidar da sua saúde é mais do que um compromisso — é a nossa missão."
                 />

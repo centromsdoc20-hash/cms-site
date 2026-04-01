@@ -61,12 +61,7 @@ export default function Medicina() {
         description: "Programa obrigatório para monitoramento da saúde dos trabalhadores conforme NR-7",
         tag: "LAUDOS TÉCNICOS",
     },
-    {
-        id: 6,
-        title: "L.I.P",
-        description: "Laudo de Insalubridade e Periculosidade, avaliação técnica para caracterização de atividades insalubres e perigosas",
-        tag: "LAUDOS TÉCNICOS",
-    },
+
     {
         id: 7,
         title: "Exames Admissionais e Demissionais",

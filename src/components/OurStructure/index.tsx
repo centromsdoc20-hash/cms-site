@@ -71,13 +71,13 @@ export default function OurStructure() {
     {
       src: consultorioEco,
       title: "Consultório de Ecografias",
-      description: "Consultório equipado com tecnologia avançada para exames de ecografia",
+      description: "Consultório equipado para exames de ecografia",
       area: "Consultório"
     },
     {
       src: consultorioEco2,
       title: "Consultório de Ecografias",
-      description: "Consultório moderno e confortável, projetado para exames de ecografia com tecnologia de ponta",
+      description: "Consultório moderno e confortável, projetado para exames de ecografia",
       area: "Consultório"
     },
     {
@@ -89,13 +89,13 @@ export default function OurStructure() {
     {
       src: consultorioGineco,
       title: "Consultório de Ginecologia",
-      description: "Consultório de ginecologia equipado com tecnologia avançada para atendimento especializado",
+      description: "Consultório de ginecologia para atendimento especializado",
       area: "Consultório"
     },
     {
       src: consultorioOftalmo,
       title: "Consultório de Oftalmologia",
-      description: "Consultório de oftalmologia moderno, com equipamentos de última geração para exames precisos",
+      description: "Consultório de oftalmologia moderno, para exames precisos",
       area: "Consultório"
     },
     {

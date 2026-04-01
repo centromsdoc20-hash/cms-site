@@ -75,7 +75,7 @@ export default function Odontologia() {
       pageTitle="Odontologia"
       pageSubtitle="Excelência e Tecnologia Integrada à Sua Saúde Bucal"
       sectionTitle="Nossos Tratamentos Odontológicos"
-      sectionDescription="Oferecemos atendimento multidisciplinar focado na resolução técnica e alta performance clínica. Nossa equipe especializada garante diagnósticos precisos e tratamentos definitivos com tecnologia de ponta."
+      sectionDescription="Oferecemos atendimento odontológico completo, focando em  prevenção, diagnóstico preciso e manutenção contínua da saúde bucal."
       items={tratamentos}
       ctaTitle="Cuide do seu sorriso hoje mesmo"
       ctaDescription="Agende sua avaliação odontológica com nossos especialistas e tenha um sorriso saudável, funcional e radiante"

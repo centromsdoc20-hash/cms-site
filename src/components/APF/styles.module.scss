@@ -1,5 +1,11 @@
 @import '../../styles/theme.scss';
 
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+
 genericContainer {
   min-height: 400px;
   background-size: cover;
@@ -27,6 +33,17 @@ genericContainer {
     left: 0;
     right: 0;
     height: 1px;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  @media (max-width: $breakpoint-md) {
+    justify-content: center;
   }
 }
 
@@ -313,4 +330,28 @@ genericContainer {
     font-style: italic;
     line-height: 1.5;
   }
+}
+
+.phoneIcon {
+  color: $color-cta-title;
+  font-size: 1.1rem;
+}
+
+.phoneLink {
+  color: $color-cta-title;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-link-text;
+    text-decoration: underline;
+  }
+}
+
+.contactText {
+  color: $color-subtitle-text;
+  font-size: 0.9rem;
+  font-style: italic;
 }

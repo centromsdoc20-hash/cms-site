@@ -284,7 +284,7 @@ color: #000;
         color: $color-card-text;
         line-height: 1.8;
         margin-bottom: 20px;
-        
+        text-align: justify;
         @include mobile {
           font-size: $font-size-text-sm;
           line-height: 1.6;

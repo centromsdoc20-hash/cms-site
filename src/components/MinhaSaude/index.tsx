@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import minhaSaudeImage from "../../assets/Vector (3).webp";
+import minhaSaudeImage from "../../assets/minhasaude.png";
 import Button from "../UI/Button";
 import {
   FaPhoneAlt,
@@ -90,8 +90,8 @@ export const MinhaSaude = ({
 
           <div className={styles.contactInfo}>
             <FaPhoneAlt className={styles.phoneIcon} />
-            <a href="tel:+555135000714" className={styles.phoneLink}>
-              (51) 3500-0714
+            <a href="tel:+55515193481804" className={styles.phoneLink}>
+              (51) 99348-1804
             </a>
             <span className={styles.contactText}>Fale com nossa equipe</span>
           </div>
